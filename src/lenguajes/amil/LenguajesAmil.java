@@ -15,7 +15,7 @@ public class LenguajesAmil {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-          System.out.println("Mi primer programa de Java II");
+          System.out.println("Línea modificada");
     }
     
 }
