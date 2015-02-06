@@ -1,0 +1,33 @@
+public class Rectangulo{
+  int LadoMayor;
+  int LadoMenor;
+  
+  //omitimos encapsulamiento
+  
+  public Rectangulo(){
+    LadoMayor=4;
+    LadoMenor=3;
+  }
+  
+  //sobre carga de constructor
+  public Rectangulo(int LadoMayor, int LadoMenor){
+  this.LadoMayor=LadoMayor;
+  this.LadoMenor=LadoMenor;
+  }
+
+}
+
+
+//Clase de prueba
+
+public class MainTest{
+  public static void main (String args[]){
+    Rectangulo x=new Rectangulo();
+    System.out.println(x.getLadoMayor());
+    /*
+    Rectangulo x=new Rectangulo(7,2);
+      x.visualizate();
+    Rectangulo y=new Rectangulo();
+    */
+  }
+}
