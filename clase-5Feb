@@ -31,3 +31,25 @@ public class MainTest{
     */
   }
 }
+
+
+
+/*
+Violación a la regla #3
+El objetivo es que no haya duplicados
+*/
+
+public class Rectangulo{
+  
+  //omitimos atributos
+  
+  public Rectangulo(int ladoMayor){
+    this.ladoMayor=ladoMayor;
+  }
+  
+  //public Rectangulo(float ladoMenor){ éste sería lo correcto
+  public Rectangulo(int ladoMenor){
+    this.ladoMenor=ladoMenor;
+  }
+  
+  
