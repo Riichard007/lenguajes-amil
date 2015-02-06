@@ -1,0 +1,37 @@
+public class Rectangulo{
+  private int lado_mayor;
+  private int lado_menor;
+  
+  public void setMayor(int lado_mayor){
+    this.Mayor=lado_mayor;
+  }
+  
+  public void setMenor(int lado_menor){
+    this.Menor=lado_menor;
+  }
+  
+  public int getMayor(){
+    return Mayor;
+  }
+  
+  public int getMenor(){
+    return Menor;
+  }
+  
+  public int calcularArea(){
+    int area = Mayor * Menor;
+    return area;
+  }
+}
+
+
+//lo probamos
+
+public class TestArea{
+  public static void main(String args[]){
+    Rectangulo r=new Rectangulo();
+    r.setMayor(5);
+    r.setMenor(2);
+    System.out.println(r.calculararea());
+  }
+}
