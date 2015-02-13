@@ -12,6 +12,16 @@ package unitec_proyecto_geometria;
 public class Cuadrado {
     private float lado;
     
+    //Éste constructor inicializa el atributo lado - PREGUNTA DE EXAMEN
+    public Cuadrado(float lado) {
+        this.lado = lado;
+    }
+    
+    //Éste es el constructor por defecto
+    public Cuadrado(){
+        
+    }
+    
     float calcularArea(){
         float area=lado*lado;
         return area;
