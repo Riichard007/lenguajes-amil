@@ -31,7 +31,11 @@ public class Arreglos1 {
         //Iterar
         for(int i=0; i<x.length; i++){
             System.out.println(x[i]);
-    }
+        }
+        
+        for(int algo:x){
+            System.out.println(algo);
+        }
     }
     
 }
