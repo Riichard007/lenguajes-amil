@@ -33,6 +33,8 @@ public class Arreglos1 {
             System.out.println(x[i]);
         }
         
+        
+        //ciclo for mejorado
         for(int algo:x){
             System.out.println(algo);
         }
