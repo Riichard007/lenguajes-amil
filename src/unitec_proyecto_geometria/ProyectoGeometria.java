@@ -72,8 +72,8 @@ public class ProyectoGeometria extends javax.swing.JFrame {
                         .addComponent(botonCalcularArea))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(etiquetaResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(112, Short.MAX_VALUE))
+                        .addComponent(etiquetaResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -110,9 +110,22 @@ public class ProyectoGeometria extends javax.swing.JFrame {
     private void botonCalcularAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCalcularAreaActionPerformed
         /*Pedirle el valor del número al campo de texto 
         y transformarlo a un número real*/
-        Cuadrado c=new Cuadrado();
-        c.setLado(Float.parseFloat(textoLado.getText()));
-        etiquetaResultado.setText("El área es: "+c.calcularArea());
+        
+        /*
+        Pasos para manejar una excepción y la vea el cliente terminal:
+        1.- Identificar el renglón que tiene la posibilidad de lanzar la excepción
+        2.- Inmediatamente después de cerrar el "Try", agregar el bloque de "Catch" con el argumento
+            correcto y la lógica deseada
+        */
+        try{
+            Cuadrado c=new Cuadrado();
+            c.setLado(Float.parseFloat(textoLado.getText()));
+            etiquetaResultado.setText("El área es: "+c.calcularArea());
+        }
+        catch(Throwable algo){
+            //etiquetaResultado.setText("El valor que metiste no es un número, tonto");
+            etiquetaResultado.setText(algo.getMessage());
+        }
     }//GEN-LAST:event_botonCalcularAreaActionPerformed
 
     /**

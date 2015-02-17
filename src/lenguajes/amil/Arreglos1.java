@@ -9,6 +9,8 @@ package lenguajes.amil;
  *
  * @author ricar_000
  */
+import java.io.*;
+
 public class Arreglos1 {
     
     public void tuNombre(int x[]){
@@ -28,16 +30,21 @@ public class Arreglos1 {
         //int m[4]=new int[4]; INCORRECTO: el tamaño del arreglo no debe ponerse dos veces
         //int []n={1,2.5,3}; INCORRECTO: no puede llevar valores double si el arreglo es int
         
+        int a=2;
+        float b=0;
+        System.out.println(a/b);
+        
         //Iterar
-        for(int i=0; i<x.length; i++){
+        /*for(int i=0; i<4; i++){
             System.out.println(x[i]);
-        }
-        
-        
-        //ciclo for mejorado
-        for(int algo:x){
+        }*/
+                
+        System.out.println("Si ocurre la excepción nunca me verás!!");
+                
+        //ciclo for mejorado  --> (:) es iterar
+        /*for(int algo:x){
             System.out.println(algo);
-        }
+        }*/
     }
     
 }
