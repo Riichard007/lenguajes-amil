@@ -18,8 +18,11 @@ public class Cuadrado {
      */
     
     //Éste constructor inicializa el atributo lado - PREGUNTA DE EXAMEN
-    public Cuadrado(float lado) {
+    public Cuadrado(float lado) throws NumeroNoNegativoException{
+        
+        ValidarValorNoNegativo.validar(lado);
         this.lado = lado;
+        
     }
     
     //Éste es el constructor por defecto
@@ -36,7 +39,8 @@ public class Cuadrado {
         return lado;
     }
 
-    public void setLado(float lado) {
+    public void setLado(float lado) throws NumeroNoNegativoException {
+        ValidarValorNoNegativo.validar(lado);
         this.lado = lado;
     }
     
