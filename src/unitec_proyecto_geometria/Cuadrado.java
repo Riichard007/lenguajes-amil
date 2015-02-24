@@ -9,7 +9,7 @@ package unitec_proyecto_geometria;
  *
  * @author ricar_000
  */
-public class Cuadrado {
+public class Cuadrado implements Superficies {
     private float lado;
     
     /**
@@ -18,9 +18,9 @@ public class Cuadrado {
      */
     
     //Éste constructor inicializa el atributo lado - PREGUNTA DE EXAMEN
-    public Cuadrado(float lado) throws NumeroNoNegativoException{
-        
-        ValidarValorNoNegativo.validar(lado);
+    public Cuadrado(float lado) throws NumeroNoNegativoException, FueraDeRangoException{
+        ValidarValores.validarValorNoNegativo(lado);
+        ValidarValores.validarRango(lado);
         this.lado = lado;
         
     }
@@ -30,7 +30,8 @@ public class Cuadrado {
         
     }
     
-    float calcularArea(){
+    
+    public float calcularArea(){
         float area=lado*lado;
         return area;
     }
@@ -39,8 +40,9 @@ public class Cuadrado {
         return lado;
     }
 
-    public void setLado(float lado) throws NumeroNoNegativoException {
-        ValidarValorNoNegativo.validar(lado);
+    public void setLado(float lado) throws NumeroNoNegativoException, FueraDeRangoException {
+        ValidarValores.validarValorNoNegativo(lado);
+        ValidarValores.validarRango(lado);
         this.lado = lado;
     }
     

@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lenguajes.amil;
+package unitec_proyecto_geometria;
 
-    public class rectangulo{
+    public class rectangulo implements Superficies{
         
         private float ladomayor;
         private float ladomenor;
@@ -40,4 +40,4 @@ package lenguajes.amil;
         this.ladomenor = ladomenor;
     }
     
-    }
+}

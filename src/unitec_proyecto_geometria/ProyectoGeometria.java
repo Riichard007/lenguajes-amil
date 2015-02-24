@@ -3,7 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+/*
+Reglas de las interfaces:
+* No puedes crear objetos a partir de ellas
+* Todos sus métodos son implícitamente abstractos
+* Al implementar la interface debe de tener la misma firma del método abstracto
+  las clases que la implementen a dicha interface
+* Puedes declarar variables siempre y cuando se inicialice el valor, si no se 
+  viola la regla de los constructores
+*/
+
+/*
+Pasos para crear tu propia excepción:
+1. Crear la clase siguiendo la covención de nombres: Para la convención verificar que va a validar la excepción, en éste 	caso "Número no negativo"  y darle ese nombre seguido de la palabra Exception (NumeroNoNegativoException)
+2. Crear una clase separada que sea la que valida "ValidarValorNoNegativo"
 package unitec_proyecto_geometria;
+*/
 
 /**
  *

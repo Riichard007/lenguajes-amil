@@ -11,7 +11,7 @@ package unitec_proyecto_geometria;
  */
 public class ProbarConstructores {   
     
-    public static void main(String args[]) throws NumeroNoNegativoException{
+    public static void main(String args[]) throws NumeroNoNegativoException, FueraDeRangoException{
         float f=45;
         double d2=45.2; //f para que se mantenga flotante y (float) para que se convierta en double y se recorte
         int i2=300;

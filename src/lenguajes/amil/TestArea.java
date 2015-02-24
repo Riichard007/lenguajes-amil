@@ -16,8 +16,8 @@ public class TestArea {
      */
     public static void main(String[] args) {
         rectangulo r=new rectangulo();
-        r.setMayor(5);
-        r.setMenor(2);
+        r.setLadomayor(5);
+        r.setLadomenor(2);
         System.out.println("El área es: " + r.calcularArea());
     }    
 }
