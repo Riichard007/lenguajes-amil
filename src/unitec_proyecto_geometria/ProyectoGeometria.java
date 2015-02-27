@@ -18,8 +18,9 @@ Reglas de las interfaces:
 Pasos para crear tu propia excepción:
 1. Crear la clase siguiendo la covención de nombres: Para la convención verificar que va a validar la excepción, en éste 	caso "Número no negativo"  y darle ese nombre seguido de la palabra Exception (NumeroNoNegativoException)
 2. Crear una clase separada que sea la que valida "ValidarValorNoNegativo"
-package unitec_proyecto_geometria;
 */
+
+package unitec_proyecto_geometria;
 
 /**
  *

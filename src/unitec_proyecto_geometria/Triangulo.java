@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package unitec_proyecto_geometria;
 
-/**
- *
- * @author ricar_000
- */
 public class Triangulo implements Superficies {
     
     private float base;
@@ -24,8 +15,8 @@ public class Triangulo implements Superficies {
     }
     
     public float calcularArea() {
-        float area = ((base*altura)/2);
-        return area;
+        System.out.print("El área del triángulo es: ");
+        return ((base*altura)/2);
     }
 
     public float getBase() {

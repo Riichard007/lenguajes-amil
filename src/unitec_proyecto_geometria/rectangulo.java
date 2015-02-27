@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package unitec_proyecto_geometria;
 
     public class rectangulo implements Superficies{
@@ -20,8 +15,8 @@ package unitec_proyecto_geometria;
     }
     
     public float calcularArea(){
-        float area = ladomayor*ladomenor;
-        return area;
+        System.out.print("El área del rectángulo es: ");
+        return ladomayor*ladomenor;
     }
 
     public float getLadomayor() {
