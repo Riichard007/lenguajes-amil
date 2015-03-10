@@ -1,0 +1,13 @@
+Albúm de Fotos
+
+* mínimo 8 fotos de lo que quieras
+  +Formato: .PNG
+  +Tamaño: 600 x 500 píxeles
+  +Nombre: sin espacios
+
+
+TAREA: Investigar
+
+FÁCIL   --> Heredando la clase Thread
+REGULAR --> Implementando la interface Runnable
+DIFÍCIL --> Usando las clases internas anónimas
